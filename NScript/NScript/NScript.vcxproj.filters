@@ -27,6 +27,18 @@
     <ClCompile Include="nlex.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="nmachine.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nvm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nhashtable.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nparser.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="nfile.h">
@@ -36,6 +48,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="nlex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nmachine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nparser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nvm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nhashtable.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

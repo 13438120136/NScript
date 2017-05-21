@@ -76,13 +76,21 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="nfile.c" />
+    <ClCompile Include="nhashtable.c" />
     <ClCompile Include="nlex.c" />
+    <ClCompile Include="nmachine.c" />
     <ClCompile Include="nobject.c" />
+    <ClCompile Include="nparser.c" />
+    <ClCompile Include="nvm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="nfile.h" />
+    <ClInclude Include="nhashtable.h" />
     <ClInclude Include="nlex.h" />
+    <ClInclude Include="nmachine.h" />
     <ClInclude Include="nobject.h" />
+    <ClInclude Include="nparser.h" />
+    <ClInclude Include="nvm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
