@@ -39,6 +39,9 @@
     <ClCompile Include="nparser.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="nmemory.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="nfile.h">
@@ -60,6 +63,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="nhashtable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nmemory.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

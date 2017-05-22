@@ -32,11 +32,11 @@ int isObjectType(NObject obj, int type)
 	return 0;
 }
 
-void setObjTo2(NObject obj, NObject other)
+void setObjTo2(NObject *obj, NObject *other)
 {
-	if (&obj == &other)
+	if (obj == other)
 		return ;
 
-	obj.Value = other.Value;
-	obj.ttype = other.ttype;
+	obj->Value = other->Value;
+	obj->ttype = other->ttype;
 }

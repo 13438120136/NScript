@@ -79,6 +79,7 @@
     <ClCompile Include="nhashtable.c" />
     <ClCompile Include="nlex.c" />
     <ClCompile Include="nmachine.c" />
+    <ClCompile Include="nmemory.c" />
     <ClCompile Include="nobject.c" />
     <ClCompile Include="nparser.c" />
     <ClCompile Include="nvm.cpp" />
@@ -88,6 +89,7 @@
     <ClInclude Include="nhashtable.h" />
     <ClInclude Include="nlex.h" />
     <ClInclude Include="nmachine.h" />
+    <ClInclude Include="nmemory.h" />
     <ClInclude Include="nobject.h" />
     <ClInclude Include="nparser.h" />
     <ClInclude Include="nvm.h" />

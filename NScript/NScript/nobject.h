@@ -38,7 +38,7 @@ typedef struct NObject
 
 extern void setObjectType(NObject obj, int type);
 extern int isObjectType(NObject obj, int type);
-extern void setObjTo2(NObject obj, NObject other);
+extern void setObjTo2(NObject *obj, NObject *other);
 ///////////////////////////////////////////////////////////////////////////////////////
 
 
