@@ -3,6 +3,7 @@
 
 typedef struct NParser
 {
+	int x;
 }NParser;
 
 #endif
