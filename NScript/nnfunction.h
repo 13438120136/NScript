@@ -3,10 +3,12 @@
 
 #include "ncode.h"
 #include "nobject.h"
+#include "nvm.h"
 
 typedef struct NNFunction
 {
-	NCommand *cmd;
+	ExecCommand *cmd;
+	ExecCommand *pc;
 	NObject *content;
 
 	int sizeCmd;

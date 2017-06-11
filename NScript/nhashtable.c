@@ -1,23 +1,8 @@
 #include "nhashtable.h"
+#include "nstring.h"
 #include <time.h>
-#include <stdlib.h>
 
 #define HASHINITSIZE 256
-#define HASHLISTSIZE 256
-
-unsigned int hashString(const char *str, size_t size)
-{
-	//unsigned int seed = (unsigned int)time(NULL);
-	unsigned int seed = 0;
-	unsigned int h = seed ^ size;
-
-	size_t l1;
-	size_t step = (size >> 5) + 1;
-	for (l1 = size; l1 >= step; l1 -= step)
-		h = h ^ ((h<<5) + (h>>2) + (unsigned char)(str[l1 - 1]));
-
-	return h;
-}
 
 void initNTable(NTable *t)
 {
@@ -26,8 +11,8 @@ void initNTable(NTable *t)
 	memset(t->value, 0, sizeof(Node *) * HASHINITSIZE);
 
 	t->valueIndex = 0;
-	t->listCount = HASHLISTSIZE;
-	t->valueList = newTValue(HASHLISTSIZE);
+	t->listCount = 0;
+	t->valueList = NULL;
 }
 
 void addNTable(NTable *t, Tkey key, TValue value)
@@ -63,6 +48,7 @@ int getIndexFromNTable(NTable *t, Tkey key)
 
 TValue *getObjFromIndex(NTable *t, int index)
 {
+	reallocObject(TValue, t->valueList, t->listCount, index + 1);
 	return &t->valueList[index];
 }
 

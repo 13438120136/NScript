@@ -1,4 +1,5 @@
 #include "nmachine.h"
+#include "nmemory.h"
 #include <stdlib.h>
 
 NMachine *newMachine()
@@ -14,4 +15,5 @@ void initMachine(NMachine *machine)
 	machine->m_nLex.nFile = &machine->m_file;
 
 	initNTable(&machine->m_table);
+	tableStrInit(&machine->strTable);
 }
